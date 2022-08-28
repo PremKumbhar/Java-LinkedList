@@ -1,23 +1,31 @@
 package com.bridgelabz.LinkedList;
 
-//Simply created the method for welcome message.
 public class LinkedList {
-   public static void display(){
-       System.out.println("Welcome to Data Structure Problems using Java Generics");
-   }
-   public static void main(String[] args) {
-       display();
-       Node firstNode = new Node(56);
-       Node secondNode = new Node(30);
-       Node thirdNode = new Node(70);
-       Node head = firstNode;
-       firstNode.next = secondNode;
-       secondNode.next = thirdNode;
+    Node head;
+    Node tail;
 
-       Node temp = head;
-       while (temp != null) {
-           System.out.println(temp.data);
-           temp = temp.next;
-       }
-   }
+    public Node  push(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+          //  tail = newNode;
+        } else {
+            Node temp = head;// 56=>30=>70
+            this.head = newNode;
+            newNode.next = temp;
+        }
+        return newNode;
+    }
+
+    public void print() {
+        if (head == null) {
+            System.out.println("Linked List is Empty");
+        } else {
+            Node temp = head;
+            while (temp != null) {
+                System.out.print(temp.data+ " ");
+                temp = temp.next;
+            }
+        }
+    }
 }
