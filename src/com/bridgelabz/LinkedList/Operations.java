@@ -8,4 +8,14 @@ public class Operations {
         linkedList.push(56);
         linkedList.print();
     }
+    /*
+    Created a method to add data at end.
+     */
+      public static void addDataAtEnd() {
+          LinkedList linkedList = new LinkedList();
+          linkedList.append(56);
+          linkedList.append(30);
+          linkedList.append(70);
+          linkedList.print();
+      }
 }

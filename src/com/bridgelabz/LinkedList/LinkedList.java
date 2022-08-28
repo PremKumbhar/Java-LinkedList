@@ -28,4 +28,14 @@ public class LinkedList {
             }
         }
     }
+    public void append(int data) { // 56=> 30=> 70
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            this.tail.next = newNode;
+            tail = newNode;
+        }
+    }
 }
