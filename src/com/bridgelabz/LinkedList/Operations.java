@@ -28,6 +28,16 @@ public class Operations {
           linkedList.insertInBetween(firstNode, newNode);
           System.out.println("after:");
           linkedList.print();
-
+      }
+      public static void deleteFirstElement() {
+    	  LinkedList linkedList = new LinkedList();
+    	  linkedList.push(56);
+    	  linkedList.push(30);
+    	  linkedList.push(70);
+    	  linkedList.print();
+    	  
+    	  linkedList.deleteFirstElement();
+    	  linkedList.print();
+    	 
       }
 }

@@ -9,7 +9,8 @@ public class LinkedListMain {
         System.out.println("Enter 1 to add the data at the start"); // UC 2
         System.out.println("Enter 2 to add the data at the End"); // UC 3
         System.out.println("Enter 3 to add the data at In Between "); // UC 4
-        System.out.println("Enter 4 to Exit");
+        System.out.println("Enter 4 to delete the first element "); // UC 5
+        System.out.println("Enter 5 to Exit");
         switch (scanner.nextInt()) {
 
             case 1:
@@ -22,6 +23,9 @@ public class LinkedListMain {
                 Operations.insertInBetween();
                 break;
             case 4:
+            	Operations.deleteFirstElement();
+            	break;
+            case 5:
             	System.out.println("Exit");
             	break;
             default:

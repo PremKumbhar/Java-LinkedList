@@ -43,4 +43,12 @@ public class LinkedList {
         previousNode.next = newNode;
         newNode.next = tempNode;
     }
+    public void deleteFirstElement() {
+    	if (head == null) {
+			System.out.println("the list is empty");
+			return;
+		}
+		System.out.println("deleted first value");
+		head = head.next;
+    }
 }
