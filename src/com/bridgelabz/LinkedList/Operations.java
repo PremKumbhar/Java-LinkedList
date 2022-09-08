@@ -38,6 +38,15 @@ public class Operations {
     	  
     	  linkedList.deleteFirstElement();
     	  linkedList.print();
-    	 
       }
+      public static void deleteLastElement() {
+    	  LinkedList linkedList = new LinkedList();
+    	  linkedList.push(56);
+    	  linkedList.push(30);
+    	  linkedList.push(70);
+    	  linkedList.print();
+    	  
+    	  linkedList.deleteLastElement();
+    	  linkedList.print();
+}
 }
